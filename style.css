@@ -1,0 +1,252 @@
+@import url(cores.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
+.adicionar-tarefas {
+    font-size: 1.3em;
+    position: absolute;
+    left: 75%;
+    top: 30%;
+}
+.texto-adicionar-tarefa {
+    text-align: center;
+    margin-left: -10px;
+    margin-bottom: 20px;
+}
+.texto-adicionar-tarefa > h3 {
+    text-align: right;
+}
+
+
+
+.adicionar-tarefas > ul {
+    list-style: none;
+    text-align: center;
+}
+.adicionar-tarefas > ul > li > button {
+    margin: 9px 0px;
+    padding: 10px 0px;
+    width: 200px;
+    border-style: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    transition: background-color 0.3s;;
+
+}
+
+
+
+#lista-domestica{
+    background-color: var(--cor-rosa-suave);
+}
+#lista-domestica:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #f2aab6;
+}
+#lista-domestica:active {
+    background-color: #de9da8;
+
+}
+
+
+
+#lista-estudos {
+    background-color: var(--cor-azul-suave);
+}
+#lista-estudos:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #84cde9;
+}
+#lista-estudos:active {
+    background-color: #6ba5bc;
+
+}
+
+
+
+#lista-trabalho {
+    background-color: var(--cor-verde-claro);
+}
+#lista-trabalho:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #87e287;
+}
+#lista-trabalho:active {
+    background-color: #70bb70;
+}
+
+
+
+#lista-compras {
+    background-color: var(--cor-laranja-claro);
+}
+#lista-compras:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #ef9571;
+}
+#lista-compras:active {
+    background-color: #c2795b;
+}
+
+
+
+.lista-domestica {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    height: 200px;
+    background-color: #FFB6C1;
+    transform: translate(-50%, -50%);
+}
+.lista-estudos {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    height: 200px;
+    background-color: #87CEEB;
+    transform: translate(-50%, -50%);
+}
+.lista-trabalho {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    height: 200px;
+    background-color: #90EE90;
+    transform: translate(-50%, -50%);
+}
+.lista-compras {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    height: 200px;
+    background-color: #FFA07A;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.titulo {
+    font-size: 1.3em;
+    padding: 5px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.585);
+}
+
+.input-tarefa, .input-data {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.botao-adicionar {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgba(0, 0, 0, 0.234);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.botao-adicionar:hover {
+    background-color: rgba(0, 0, 0, 0.389);
+}
+
+.lembrete-div {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+}
+
+.lista-domestica {
+    background-color: #de9da8;
+}
+
+
+
+.bloco-principal {
+    width: 200px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.lembrete-div {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+}
+
+#respotas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65vw;
+    margin: 30px;
+}
+
+.bloco-principal {
+    width: 200px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.bloco-principal.casa {
+    margin: 30px;
+    text-align: center;
+    background-color: #FFB6C1;
+}
+
+.bloco-principal.estudos {
+    margin: 30px;
+    text-align: center;
+    background-color: #87CEEB;
+}
+
+.bloco-principal.trabalho {
+    margin: 30px;
+    text-align: center;
+    background-color: #90EE90;
+}
+
+.bloco-principal.compras {
+    margin: 30px;
+    text-align: center;
+    background-color: #FFA07A;
+}
+
+#limparLocalStorage {
+
+    padding: 20px;
+}

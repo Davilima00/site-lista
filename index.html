@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cores.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6-beta.36/jquery.inputmask.min.js"></script>
+    <title>Listas de Tarefas</title>
+</head>
+<body>
+    <header>
+        <h1>Listas de Tarefas</h1>
+    </header>
+    <main>
+        <div class="adicionar-tarefas">
+            <div class="texto-adicionar-tarefa">
+                <h2>Adicionar Tarefas</h2>
+                <h3><span class="titulo-destaque">Tipos de Tarefas</span></h3>
+            </div>
+            <ul>
+                <li><button id="lista-domestica" onclick="add_list_casa()">Adicionar Lista Doméstica</button></li>
+                <li><button id="lista-estudos" onclick="add_list_estudos()">Adicionar Lista de Estudos</button></li>
+                <li><button id="lista-trabalho" onclick="add_list_trabalho()">Adicionar Lista do Trabalho</button></li>
+                <li><button id="lista-compras" onclick="add_list_compras()">Adicionar Lista de Compras</button></li>
+                <li><button id="limparLocalStorage">Limpar LocalStorage</button></li>
+            </ul>
+        </div>
+        <div class="bloco-tarefas" id="conteiner">
+            <div class="tarefas">
+            </div>
+
+            <div id="respotas">
+
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html

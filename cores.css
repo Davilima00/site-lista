@@ -1,0 +1,17 @@
+:root {
+    --cor-azul-suave: #87CEEB;      /* Azul Suave */
+    --cor-verde-claro: #90EE90;     /* Verde Claro */
+    --cor-amarelo-pastel: #FFFACD;  /* Amarelo Pastel */
+    --cor-laranja-claro: #FFA07A;   /* Laranja Claro */
+    --cor-rosa-suave: #FFB6C1;      /* Rosa Suave */
+}
+
+body {
+    background-color: var(--cor-amarelo-pastel);
+}
+
+
+.titulo-destaque {
+    color: #a1664e;
+}
+
